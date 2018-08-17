@@ -33,7 +33,7 @@ def send_sms(to_number, from_number):
         client.messages.create(
             body='Thanks for calling!',
             from_=from_number,
-            to='+353016183000'
+            to=to_number
         )
     except TwilioRestException as exception:
         # Check for invalid mobile number error from Twilio
