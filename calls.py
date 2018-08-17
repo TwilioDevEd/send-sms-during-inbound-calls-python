@@ -10,8 +10,7 @@ app = Flask(__name__)
 
 @app.route("/answer", methods=['GET', 'POST'])
 def answer():
-    """Respond to incoming phone calls with a 'Hello world' message"""
-
+    """Respond to incoming phone calls with a 'Hello world' message."""
     # Start our TwiML response
     resp = VoiceResponse()
 
@@ -26,7 +25,7 @@ def answer():
 
 
 def send_sms(to_number, from_number):
-
+    """Using our caller's number and the number they called, send an SMS."""
     client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
     try:

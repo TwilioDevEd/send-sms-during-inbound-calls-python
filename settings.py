@@ -1,4 +1,3 @@
-# https://robinislam.me/blog/reading-environment-variables-in-python/
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv  # need to `pip install -U python-dotenv`
