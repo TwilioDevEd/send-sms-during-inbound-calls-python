@@ -27,14 +27,12 @@ This project is built using the [Flask](http://flask.pocoo.org/) web framework, 
     ```bash
     $ pip install -r requirements.txt
     ```
-1. Create an environment file (`.env`) and define your Twilio Account SID and Auth Token. 
+1. Create an environment file (`.env`) and define your Twilio Account SID and Auth Token. Both of these can be found in your [Twilio console](https://www.twilio.com/console).
 
    ```bash
    ACCOUNT_SID = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
    AUTH_TOKEN = 'your_auth_token'
    ```
-
-Both of these can be found in your [Twilio console](https://www.twilio.com/console).
 
 1. Start the server.
 
