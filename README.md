@@ -18,8 +18,8 @@ This project is built using the [Flask](http://flask.pocoo.org/) web framework, 
 1. Create a new virtual environment with [virtualenv](https://virtualenv.pypa.io/en/latest/):
 
         ```bash
-        virtualenv -p python3 venv
-        source venv/bin/activate
+        $ virtualenv -p python3 venv
+        $ source venv/bin/activate
         ```
 
 1. Install the dependencies.
@@ -27,7 +27,7 @@ This project is built using the [Flask](http://flask.pocoo.org/) web framework, 
     ```bash
     pip install -r requirements.txt
     ```
-1. Create an environment file (`.env`) and include your Twilio Account SID and Auth Token. Both of these can be found in your [Twilio console](https://www.twilio.com/console).
+1. Create an environment file (`.env`) and define your Twilio Account SID and Auth Token. Both of these can be found in your [Twilio console](https://www.twilio.com/console).
 
 1. Start the server.
 
