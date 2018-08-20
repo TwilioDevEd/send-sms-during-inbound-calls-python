@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route("/answer", methods=['GET', 'POST'])
 def answer():
-    """Respond to incoming phone calls with a 'Hello world' message."""
+    """Respond to incoming phone calls with a message."""
     # Start our TwiML response
     resp = VoiceResponse()
 
@@ -19,7 +19,8 @@ def answer():
     send_sms(caller, twilio_number)
 
     # Read a message aloud to the caller
-    resp.say("hello world!", voice='alice')
+    resp.say("Thanks for calling! We just sent you a text with a clue.",
+             voice='alice')
 
     return str(resp)
 
@@ -30,7 +31,7 @@ def send_sms(to_number, from_number):
 
     try:
         client.messages.create(
-            body='Thanks for calling!',
+            body="There’s always money in the banana stand.",
             from_=from_number,
             to=to_number
         )
