@@ -17,28 +17,28 @@ This project is built using the [Flask](http://flask.pocoo.org/) web framework, 
 
 1. Create a new virtual environment with [virtualenv](https://virtualenv.pypa.io/en/latest/):
 
-        ```bash
-        $ virtualenv -p python3 venv
-        $ source venv/bin/activate
-        ```
+    ```bash
+    $ virtualenv -p python3 venv
+    $ source venv/bin/activate
+    ```
 
 1. Install the dependencies.
 
     ```bash
-    pip install -r requirements.txt
+    $ pip install -r requirements.txt
     ```
 1. Create an environment file (`.env`) and define your Twilio Account SID and Auth Token. Both of these can be found in your [Twilio console](https://www.twilio.com/console).
 
 1. Start the server.
 
     ```bash
-    python calls.py
+    $ python calls.py
     ```
 
 1. Expose the application to the wider Internet using [ngrok](https://ngrok.com/).
 
     ```bash
-    ngrok http 5000 -host-header="localhost:5000"
+    $ ngrok http 5000 -host-header="localhost:5000"
     ```
 
 1. Configure Twilio to call your webhooks
