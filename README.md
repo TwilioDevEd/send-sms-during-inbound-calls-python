@@ -3,6 +3,8 @@ Learn how to send an SMS to someone who's called your Twilio phone number while 
 
 This small sample application will say a short message to an inbound caller and, at the same time, send them an SMS.
 
+[Read the full tutorial here!](https://www.twilio.com/docs/sms/tutorials/send-sms-during-phone-call-python)
+
 
 ## Local Development
 
