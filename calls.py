@@ -31,7 +31,7 @@ def send_sms(to_number, from_number):
 
     try:
         client.messages.create(
-            body="There’s always money in the banana stand.",
+            body="There's always money in the banana stand.",
             from_=from_number,
             to=to_number
         )
