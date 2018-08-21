@@ -11,16 +11,23 @@ This project is built using the [Flask](http://flask.pocoo.org/) web framework, 
 1. First clone this repository and `cd` into it.
 
    ```bash
-   $ git clone git@github.com:TwilioDevEd/send-sms-during-inbound-calls-python.git
+   $ git clone https://github.com/TwilioDevEd/send-sms-during-inbound-calls-python.git
    $ cd send-sms-during-inbound-calls-python
    ```
 
 1. Create a new virtual environment with [virtualenv](https://virtualenv.pypa.io/en/latest/):
 
     ```bash
-    $ virtualenv -p python3 venv
+    $ virtualenv venv
+    ```
+    
+    If you're using a linux or Mac computer, activate your environment with this line:
+    ```bash
     $ source venv/bin/activate
     ```
+    If you're using a Windows machine, you'll activate your environment in one of two ways:
+    PowerShell: `. .\venv\Scripts\activate.ps1`
+    Cmd shell: `.\venv\Scripts\activate.bat`
 
 1. Install the dependencies.
 
