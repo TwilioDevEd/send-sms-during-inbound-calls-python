@@ -26,7 +26,9 @@ This project is built using the [Flask](http://flask.pocoo.org/) web framework, 
     $ source venv/bin/activate
     ```
     If you're using a Windows machine, you'll activate your environment in one of two ways:
+    
     PowerShell: `. .\venv\Scripts\activate.ps1`
+    
     Cmd shell: `.\venv\Scripts\activate.bat`
 
 1. Install the dependencies.
