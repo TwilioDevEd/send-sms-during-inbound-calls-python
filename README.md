@@ -2,7 +2,8 @@
   <img src="https://static0.twilio.com/marketing/bundles/marketing/img/logos/wordmark-red.svg" alt="Twilio" width="250" />
 </a>
 
-# Send an SMS during a phone call. Powered by Twilio - Python/Flask
+# Send an SMS during a phone call. 
+## Powered by Twilio and Python/Flask
 
 Learn how to send an SMS to someone who's called your Twilio phone number while they're on the call.
 
