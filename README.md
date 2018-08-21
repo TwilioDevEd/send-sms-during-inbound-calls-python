@@ -69,7 +69,7 @@ This project is built using the [Flask](http://flask.pocoo.org/) web framework, 
   The voice url should look something like this:
 
   ```
-  http://<your-ngrok-subdomain>.ngrok.io/answer
+  https://<your-ngrok-subdomain>.ngrok.io/answer
   ```
 
 
