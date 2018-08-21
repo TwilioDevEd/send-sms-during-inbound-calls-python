@@ -1,4 +1,9 @@
-# send-sms-during-inbound-calls
+<a href="https://www.twilio.com">
+  <img src="https://static0.twilio.com/marketing/bundles/marketing/img/logos/wordmark-red.svg" alt="Twilio" width="250" />
+</a>
+
+# Send an SMS during a phone call. Powered by Twilio - Python/Flask
+
 Learn how to send an SMS to someone who's called your Twilio phone number while they're on the call.
 
 This small sample application will say a short message to an inbound caller and, at the same time, send them an SMS.
