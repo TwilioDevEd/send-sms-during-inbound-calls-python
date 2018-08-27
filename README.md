@@ -59,7 +59,7 @@ This project is built using the [Flask](http://flask.pocoo.org/) web framework, 
 1. Expose the application to the wider Internet using [ngrok](https://ngrok.com/).
 
     ```bash
-    $ ngrok https 5000 -host-header="localhost:5000"
+    $ ngrok http 5000 -host-header="localhost:5000"
     ```
 
 1. Configure Twilio to call your webhooks
