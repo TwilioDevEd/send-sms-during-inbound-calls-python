@@ -10,7 +10,7 @@ PyJWT==1.6.4
 PySocks==1.6.8
 python-dotenv==0.9.1
 pytz==2018.5
-requests==2.19.1
+requests==2.20.0
 six==1.11.0
 twilio==6.16.1
 urllib3==1.23
