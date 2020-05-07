@@ -4,6 +4,8 @@
 
 # Send an SMS during a phone call. Powered by Twilio and Python/Flask
 
+![](https://github.com/TwilioDevEd/send-sms-during-inbound-calls-python/workflows/Flask/badge.svg)
+
 > We are currently in the process of updating this sample template. If you are encountering any issues with the sample, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues) and we'll try to help you.
 
 Learn how to send an SMS to someone who's called your Twilio phone number while they're on the call.
@@ -12,10 +14,27 @@ This small sample application will say a short message to an inbound caller and,
 
 [Read the full tutorial here!](https://www.twilio.com/docs/sms/tutorials/send-sms-during-phone-call-python)
 
+## Features
+- [Flask](http://flask.pocoo.org/) web framework
+- [Twilio Python Helper Library](https://www.twilio.com/docs/libraries/python)
+- Unit tests using [`pytest`](https://docs.pytest.org/en/latest/)
+- Automated CI testing using GitHub Actions
 
-## Local Development
+## Set up
 
-This project is built using the [Flask](http://flask.pocoo.org/) web framework, Python 3, and the [Twilio Python Helper Library](https://www.twilio.com/docs/libraries/python).
+### Requirements
+
+- [Python](https://www.python.org/) >= **3.6.x** version
+
+### Twilio Account Settings
+
+You need to collect all the config values to run the application.
+
+| Config Value  | Description |
+| :-------------  |:------------- |
+TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN | In [Twilio Account Settings](https://www.twilio.com/console).
+
+### Local development
 
 1. First clone this repository and `cd` into it.
 
@@ -45,14 +64,15 @@ This project is built using the [Flask](http://flask.pocoo.org/) web framework, 
     ```bash
     $ pip install -r requirements.txt
     ```
-1. Create an environment file (`.env`) and define your Twilio Account SID and Auth Token. Both of these can be found in your [Twilio console](https://www.twilio.com/console).
+1. Copy the sample configuration file and edit it to match your configuration.
 
    ```bash
-   ACCOUNT_SID = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
-   AUTH_TOKEN = 'your_auth_token'
+   $ cp .env.example .env
    ```
 
-1. Start the server.
+   See [Twilio Account Settings](#twilio-account-settings) to locate the necessary environment variables.
+
+1. Start the server, the following command will run the application on port 5000.
 
     ```bash
     $ python calls.py
@@ -74,10 +94,20 @@ This project is built using the [Flask](http://flask.pocoo.org/) web framework, 
   https://<your-ngrok-subdomain>.ngrok.io/answer
   ```
 
+That's it!
+
+### Test
+
+1. To run the tests locally, execute the following command.
+
+    ```bash
+    $ python -m pytest
+    ```
 
 ## Meta
 
 * No warranty expressed or implied. Software is as is. Diggity.
+* The CodeExchange repository can be found [here](https://github.com/twilio-labs/code-exchange/).
 * [MIT License](http://www.opensource.org/licenses/mit-license.html)
 * Lovingly crafted by Twilio Developer Education.
 

@@ -10,5 +10,5 @@ print(dotenv_path)
 load_dotenv(dotenv_path)
 
 # Accessing variables.
-ACCOUNT_SID = os.getenv('ACCOUNT_SID')
-AUTH_TOKEN = os.getenv('AUTH_TOKEN')
+ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
+AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
