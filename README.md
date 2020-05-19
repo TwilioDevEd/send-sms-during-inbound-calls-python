@@ -43,7 +43,7 @@ TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN | In [Twilio Account Settings](https://ww
    $ cd send-sms-during-inbound-calls-python
    ```
 
-1. Create a new virtual environment with [virtualenv](https://virtualenv.pypa.io/en/latest/):
+2. Create a new virtual environment with [virtualenv](https://virtualenv.pypa.io/en/latest/):
 
     ```bash
     $ virtualenv venv
@@ -59,12 +59,12 @@ TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN | In [Twilio Account Settings](https://ww
     
     Cmd shell: `.\venv\Scripts\activate.bat`
 
-1. Install the dependencies.
+3. Install the dependencies.
 
     ```bash
     $ pip install -r requirements.txt
     ```
-1. Copy the sample configuration file and edit it to match your configuration.
+4. Copy the sample configuration file and edit it to match your configuration.
 
    ```bash
    $ cp .env.example .env
@@ -72,37 +72,41 @@ TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN | In [Twilio Account Settings](https://ww
 
    See [Twilio Account Settings](#twilio-account-settings) to locate the necessary environment variables.
 
-1. Start the server, the following command will run the application on port 5000.
+5. Start the server, the following command will run the application on port 5000.
 
     ```bash
     $ python calls.py
     ```
 
-1. Expose the application to the wider Internet using [ngrok](https://ngrok.com/).
+6. Expose the application to the wider Internet using [ngrok](https://ngrok.com/).
 
     ```bash
     $ ngrok http 5000 -host-header="localhost:5000"
     ```
 
-1. Configure Twilio to call your webhooks
+7. Configure Twilio to call your webhooks
 
-  You will need to configure Twilio to call your application when calls are
-  received in your [*Twilio Number*](https://www.twilio.com/user/account/messaging/phone-numbers).
-  The voice url should look something like this:
+   You will need to configure Twilio to call your application when calls are
+   received in your [*Twilio Number*](https://www.twilio.com/console/phone-numbers/incoming).
+   The voice url should look something like this:
 
-  ```
-  https://<your-ngrok-subdomain>.ngrok.io/answer
-  ```
+   ```
+   https://<your-ngrok-subdomain>.ngrok.io/answer
+   ```
+
+8. Finally, call your Twilio number to test it out, just click on `Call`.
+
+   ![](images/create-twiml-call-button.png)
 
 That's it!
 
 ### Test
 
-1. To run the tests locally, execute the following command.
+To run the tests locally, execute the following command.
 
-    ```bash
-    $ python -m pytest
-    ```
+```bash
+$ python -m pytest
+```
 
 ## Meta
 
