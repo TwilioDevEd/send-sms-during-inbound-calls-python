@@ -8,17 +8,24 @@
 
 > We are currently in the process of updating this sample template. If you are encountering any issues with the sample, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues) and we'll try to help you.
 
+## About
+
 Learn how to send an SMS to someone who's called your Twilio phone number while they're on the call.
 
 This small sample application will say a short message to an inbound caller and, at the same time, send them an SMS.
 
 [Read the full tutorial here!](https://www.twilio.com/docs/sms/tutorials/send-sms-during-phone-call-python)
 
+Implementations in other languages:
+
+| .NET | Java | Node | PHP | Ruby |
+| :--- | :--- | :----- | :-- | :--- |
+| [Done](https://github.com/TwilioDevEd/send-sms-during-inbound-calls-csharp)  | [Done](https://github.com/TwilioDevEd/send-sms-during-inbound-calls-java)  | [Done](https://github.com/TwilioDevEd/send-sms-during-inbound-calls-node)  | [Done](https://github.com/TwilioDevEd/send-sms-during-inbound-calls-php) | [Done](https://github.com/TwilioDevEd/send-sms-during-inbound-calls-ruby) |
+
 ## Features
 - [Flask](http://flask.pocoo.org/) web framework
 - [Twilio Python Helper Library](https://www.twilio.com/docs/libraries/python)
 - Unit tests using [`pytest`](https://docs.pytest.org/en/latest/)
-- Automated CI testing using GitHub Actions
 
 ## Set up
 
@@ -39,49 +46,40 @@ TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN | In [Twilio Account Settings](https://ww
 1. First clone this repository and `cd` into it.
 
    ```bash
-   $ git clone https://github.com/TwilioDevEd/send-sms-during-inbound-calls-python.git
-   $ cd send-sms-during-inbound-calls-python
+   git clone https://github.com/TwilioDevEd/send-sms-during-inbound-calls-python.git
+   cd send-sms-during-inbound-calls-python
    ```
 
-2. Create a new virtual environment with [virtualenv](https://virtualenv.pypa.io/en/latest/):
-
-    ```bash
-    $ virtualenv venv
-    ```
-    
-    If you're using a linux or Mac computer, activate your environment with this line:
-    ```bash
-    $ source venv/bin/activate
-    ```
-    If you're using a Windows machine, you'll activate your environment in one of two ways:
-    
-    PowerShell: `. .\venv\Scripts\activate.ps1`
-    
-    Cmd shell: `.\venv\Scripts\activate.bat`
-
-3. Install the dependencies.
-
-    ```bash
-    $ pip install -r requirements.txt
-    ```
-4. Copy the sample configuration file and edit it to match your configuration.
+2. Create the virtual environment, load it and install the dependencies.
 
    ```bash
-   $ cp .env.example .env
+   make install
+   ```
+
+   If you're using a Windows machine, you'll activate your environment in one of two ways:
+   
+   PowerShell: `. .\venv\Scripts\activate.ps1`
+   
+   Cmd shell: `.\venv\Scripts\activate.bat`
+
+3. Copy the sample configuration file and edit it to match your configuration.
+
+   ```bash
+   cp .env.example .env
    ```
 
    See [Twilio Account Settings](#twilio-account-settings) to locate the necessary environment variables.
 
-5. Start the server, the following command will run the application on port 5000.
+4. Start the server, the following command will run the application on port 5000. Before running the following command, make sure the virtual environment is activated.
 
-    ```bash
-    $ python calls.py
-    ```
+   ```bash
+   make serve
+   ```
 
 6. Expose the application to the wider Internet using [ngrok](https://ngrok.com/).
 
     ```bash
-    $ ngrok http 5000 -host-header="localhost:5000"
+    ngrok http 5000 -host-header="localhost:5000"
     ```
 
 7. Configure Twilio to call your webhooks
@@ -91,7 +89,7 @@ TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN | In [Twilio Account Settings](https://ww
    The voice url should look something like this:
 
    ```
-   https://<your-ngrok-subdomain>.ngrok.io/answer
+   https://0f72e8a8.ngrok.io/answer
    ```
 
 8. Finally, call your Twilio number to test it out, just click on `Call`.
@@ -102,10 +100,10 @@ That's it!
 
 ### Test
 
-To run the tests locally, execute the following command.
+To run the tests locally, execute the following command. Before running the following command, make sure the virtual environment is activated.
 
 ```bash
-$ python -m pytest
+python3 -m pytest
 ```
 
 ## Meta
