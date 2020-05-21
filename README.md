@@ -96,7 +96,7 @@ TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN | In [Twilio Account Settings](https://ww
 
 That's it!
 
-### Test
+### Tests
 
 To run the tests locally, execute the following command. Before running the following command, make sure the virtual environment is activated.
 
@@ -104,10 +104,32 @@ To run the tests locally, execute the following command. Before running the foll
 python3 -m pytest
 ```
 
-## Meta
+### Cloud deployment
 
-* No warranty expressed or implied. Software is as is. Diggity.
-* The CodeExchange repository can be found [here](https://github.com/twilio-labs/code-exchange/).
-* [MIT License](http://www.opensource.org/licenses/mit-license.html)
-* Lovingly crafted by Twilio Developer Education.
+Additionally to trying out this application locally, you can deploy it to a variety of host services. Here is a small selection of them.
 
+Please be aware that some of these might charge you for the usage or might make the source code for this application visible to the public. When in doubt research the respective hosting service first.
+
+| Service                           |                                                                                                                                                                                                                           |
+| :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Heroku](https://www.heroku.com/) | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)                                                                                                                                       |
+
+## Resources
+
+- The CodeExchange repository can be found [here](https://github.com/twilio-labs/code-exchange/).
+
+## Contributing
+
+This template is open source and welcomes contributions. All contributions are subject to our [Code of Conduct](https://github.com/twilio-labs/.github/blob/master/CODE_OF_CONDUCT.md).
+
+[Visit the project on GitHub](https://github.com/twilio-labs/sample-template-nodejs)
+
+## License
+
+[MIT](http://www.opensource.org/licenses/mit-license.html)
+
+## Disclaimer
+
+No warranty expressed or implied. Software is as is.
+
+[twilio]: https://www.twilio.com
