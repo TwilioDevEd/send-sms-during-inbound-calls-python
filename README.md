@@ -92,9 +92,7 @@ TWILIO_ACCOUNT_SID / TWILIO_AUTH_TOKEN | In [Twilio Account Settings](https://ww
    https://0f72e8a8.ngrok.io/answer
    ```
 
-8. Finally, call your Twilio number to test it out, just click on `Call`.
-
-   ![](images/create-twiml-call-button.png)
+8. Finally, call your Twilio number to test it out.
 
 That's it!
 
