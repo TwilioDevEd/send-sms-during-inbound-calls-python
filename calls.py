@@ -41,4 +41,4 @@ def send_sms(to_number, from_number):
             print("Uh oh, looks like this caller can't receive SMS messages.")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
