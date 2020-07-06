@@ -8,7 +8,7 @@ Jinja2==2.10
 MarkupSafe==1.0
 PyJWT==1.6.4
 PySocks==1.6.8
-python-dotenv==0.9.1
+python-dotenv==0.14.0
 pytz==2018.5
 requests==2.19.1
 six==1.11.0
