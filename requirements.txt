@@ -12,7 +12,7 @@ python-dotenv==0.13.0
 pytest==5.4.1
 pytz==2020.1
 requests==2.23.0
-six==1.14.0
+six==1.15.0
 twilio==6.49.0
 urllib3==1.25.11
 Werkzeug==1.0.1
