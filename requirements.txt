@@ -11,7 +11,7 @@ PySocks==1.7.1
 python-dotenv==0.15.0
 pytest==5.4.1
 pytz==2020.4
-requests==2.23.0
+requests==2.25.0
 six==1.15.0
 twilio==6.49.0
 urllib3==1.25.11
